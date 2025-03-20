@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- User Profile Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user_prof"
+            android:scaleType="centerCrop"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, Mark! 👋"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:id="@+id/user_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here's your cart summary"
+                android:textSize="14sp"
+                android:textColor="#777777"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Total Price -->
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: $0.00"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:gravity="center"
+        android:padding="8dp"
+
+        android:elevation="4dp"
+        android:paddingVertical="10dp"/>
+
+    <!-- Cart Items List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"/>
+
+    <!-- Checkout Button -->
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Checkout"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+
+        android:elevation="6dp"
+        android:layout_marginTop="16dp"
+        android:paddingVertical="12dp"/>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/home"
+            android:contentDescription="Home"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cart1"
+            android:contentDescription="Cart"
+            android:padding="10dp"
+            android:layout_marginStart="40dp"/>
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/person"
+            android:contentDescription="Profile"
+            android:padding="10dp"
+            android:layout_marginStart="40dp"/>
+
+        <ImageView
+            android:id="@+id/my_explore"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/search"
+            android:contentDescription="Explore"
+            android:padding="10dp"
+            android:layout_marginStart="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>

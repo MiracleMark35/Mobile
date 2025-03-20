@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/product3" />
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="16dp" />
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: $0.00"
+        android:textSize="18sp"
+        android:textColor="#E61212"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <!-- Product Rating -->
+    <TextView
+        android:id="@+id/product_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating: 4.5 ★"
+        android:textSize="16sp"
+        android:textColor="#FFA000"
+        android:layout_marginTop="4dp" />
+
+    <!-- Product Description -->
+    <TextView
+        android:id="@+id/product_description_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a high-quality product made from the finest materials. Designed for durability and comfort, it is perfect for everyday use."
+        android:textSize="16sp"
+
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+       />
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/add_to_cart1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#7512E6"
+        android:textColor="@android:color/white" />
+
+    <!-- Buy Now Button -->
+    <Button
+        android:id="@+id/buy_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy Now"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#E61212"
+        android:textColor="@android:color/white" />
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/home"
+            android:contentDescription="Home"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cart1"
+            android:contentDescription="Cart"
+            android:padding="8dp"
+            android:layout_marginStart="32dp"/>
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/person"
+            android:contentDescription="Profile"
+            android:padding="8dp"
+            android:layout_marginStart="32dp"/>
+
+        <ImageView
+            android:id="@+id/my_explore"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/search"
+            android:contentDescription="Explore"
+            android:padding="8dp"
+            android:layout_marginStart="32dp"/>
+    </LinearLayout>
+
+</LinearLayout>

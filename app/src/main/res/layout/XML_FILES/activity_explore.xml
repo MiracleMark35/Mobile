@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Filter Section Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <!-- Categories Filter Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/ranked_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ranked"
+            android:backgroundTint="#1E88E5"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/hot_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hot"
+            android:backgroundTint="#FF5722"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"/>
+
+        <Button
+            android:id="@+id/loved_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Loved"
+            android:backgroundTint="#E91E63"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"/>
+
+        <Button
+            android:id="@+id/secret_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Secret"
+            android:backgroundTint="#673AB7"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Skin Type Filter -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by Skin Type"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/normal_skin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Normal"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/dry_skin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dry"
+            android:backgroundTint="#FF9800"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"/>
+
+        <Button
+            android:id="@+id/oily_skin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Oily"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"/>
+
+        <Button
+            android:id="@+id/combination_skin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Combination"
+            android:backgroundTint="#9C27B0"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Product List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/explore_list22"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:paddingTop="8dp"/>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#F8F8F8"
+        android:padding="12dp"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/home"
+            android:contentDescription="Home"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/cart1"
+            android:contentDescription="Cart"
+            android:padding="8dp"
+            android:layout_marginStart="40dp"/>
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/person"
+            android:contentDescription="Profile"
+            android:padding="8dp"
+            android:layout_marginStart="40dp"/>
+
+        <ImageView
+            android:id="@+id/my_explore"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/search"
+            android:contentDescription="Explore"
+            android:padding="8dp"
+            android:layout_marginStart="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": "12335",
+      "name": "Markk12",
+      "email": "Markk12@gmail.com",
+      "gender": "Male"
+    },
+    {
+      "id": "12321",
+      "name": "Markk2",
+      "email": "Markk2@gmail.com",
+      "gender": "Male"
+    },
+    {
+      "id": "12357",
+      "name": "mark3",
+      "email": "mark3@gmail.com",
+      "gender": "Female"
+    }
+
+  ]
+}

@@ -23,7 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-        </activity>
+        </activity>|
+        <activity android:name=".JSONPARSER" android:exported="true" />
+        <activity android:name=".SharedRef" android:exported="true" />
+        <activity android:name=".CustomAdapter" android:exported="true" />
         <activity android:name=".HomeActivity" android:exported="true" />
         <activity android:name=".CartActivity" android:exported="true" />
         <activity android:name=".ProductDetailsActivity" android:exported="true" />

@@ -23,20 +23,13 @@ public class ExploreActivity extends AppCompatActivity {
         exploreProductsList.setLayoutManager(new LinearLayoutManager(this));
 
         // Sample Product Data
-        allProducts = new ArrayList<>();
-        allProducts.add(new Product("Face Wash", R.drawable.product1, 19.99, 4.5f, "Normal", "Ranked"));
-        allProducts.add(new Product("Moisturizer", R.drawable.product2, 29.99, 4.0f, "Dry", "Hot"));
-        allProducts.add(new Product("Sunscreen", R.drawable.product3, 15.99, 4.8f, "Oily", "Loved"));
-        allProducts.add(new Product("Serum", R.drawable.product4, 22.99, 4.2f, "Combination", "Secret"));
-        allProducts.add(new Product("Clay Mask", R.drawable.product5, 18.50, 4.7f, "Oily", "Ranked"));
-        allProducts.add(new Product("Hydrating Cream", R.drawable.product6, 25.50, 4.3f, "Normal", "Hot"));
+        exploreProductsList = findViewById(R.id.explore_list22);
+        exploreProductsList.setLayoutManager(new LinearLayoutManager(this));
 
-        allProducts.add(new Product("Vitamin C Serum", R.drawable.product7, 30.99, 4.6f, "All", "Secret"));
-        allProducts.add(new Product("Aloe Vera Gel", R.drawable.product8, 12.50, 4.4f, "Sensitive", "Loved"));
-        allProducts.add(new Product("Night Repair Cream", R.drawable.product10, 35.99, 4.9f, "Dry", "Hot"));
-        allProducts.add(new Product("Toner", R.drawable.product9, 14.99, 4.1f, "Combination", "Ranked"));
-        allProducts.add(new Product("Lip Balm", R.drawable.product11, 8.99, 4.7f, "All", "Loved"));
-        allProducts.add(new Product("Cleansing Oil", R.drawable.product12, 24.99, 4.5f, "Oily", "Secret"));
+        // Load all products from JSON
+        // Inside onCreate() of ExploreActivity
+        JSONparserBeauty parser = new JSONparserBeauty(this);
+        allProducts = parser.loadproductsfromjson();
 
 
         exploreAdapter = new ProductAdapter(new ArrayList<>(allProducts), this);

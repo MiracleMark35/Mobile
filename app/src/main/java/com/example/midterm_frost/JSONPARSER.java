@@ -43,6 +43,7 @@ public class JSONPARSER extends AppCompatActivity {
                 personEmail.add(userDetail.getString("email"));
             }
         }catch(JSONException e) {
+            e.printStackTrace();
         }
 
         CustomAdapter customAdapter = new CustomAdapter(JSONPARSER.this,

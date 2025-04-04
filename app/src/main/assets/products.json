@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "name": "Face Wash",
+      "image": "product1",
+      "price": 19.99,
+      "rating": 4.5,
+      "skinType": "Normal",
+      "category": "Ranked"
+    },
+    {
+      "name": "Moisturizer",
+      "image": "product2",
+      "price": 29.99,
+      "rating": 4.0,
+      "skinType": "Dry",
+      "category": "Hot"
+    },
+    {
+      "name": "Sunscreen",
+      "image": "product3",
+      "price": 15.99,
+      "rating": 4.8,
+      "skinType": "Oily",
+      "category": "Loved"
+    },
+    {
+      "name": "Serum",
+      "image": "product4",
+      "price": 22.99,
+      "rating": 4.2,
+      "skinType": "Combination",
+      "category": "Secret"
+    },
+    {
+      "name": "Clay Mask",
+      "image": "product5",
+      "price": 18.50,
+      "rating": 4.7,
+      "skinType": "Oily",
+      "category": "Ranked"
+    },
+    {
+      "name": "Hydrating Cream",
+      "image": "product6",
+      "price": 25.50,
+      "rating": 4.3,
+      "skinType": "Normal",
+      "category": "Hot"
+    },
+    {
+      "name": "Vitamin C Serum",
+      "image": "product7",
+      "price": 30.99,
+      "rating": 4.6,
+      "skinType": "All",
+      "category": "Secret"
+    },
+    {
+      "name": "Aloe Vera Gel",
+      "image": "product8",
+      "price": 12.50,
+      "rating": 4.4,
+      "skinType": "Sensitive",
+      "category": "Loved"
+    },
+    {
+      "name": "Night Repair Cream",
+      "image": "product10",
+      "price": 35.99,
+      "rating": 4.9,
+      "skinType": "Dry",
+      "category": "Hot"
+    },
+    {
+      "name": "Toner",
+      "image": "product9",
+      "price": 14.99,
+      "rating": 4.1,
+      "skinType": "Combination",
+      "category": "Ranked"
+    },
+    {
+      "name": "Lip Balm",
+      "image": "product11",
+      "price": 8.99,
+      "rating": 4.7,
+      "skinType": "All",
+      "category": "Loved"
+    },
+    {
+      "name": "Cleansing Oil",
+      "image": "product12",
+      "price": 24.99,
+      "rating": 4.5,
+      "skinType": "Oily",
+      "category": "Secret"
+    }
+  ]
+}
